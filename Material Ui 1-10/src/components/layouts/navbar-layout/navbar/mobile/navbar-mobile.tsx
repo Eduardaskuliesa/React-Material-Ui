@@ -11,16 +11,7 @@ const NavbarMobileLink = styled(NavLink)(({ theme }) => ({
   color: theme.palette.common.black,
   '&.active': {
     color: theme.palette.primary.main,
-    fontSize: '18px',
-    fontWeight: 'bold',
   },
-  '&:hover': {
-    color: 'black',
-    backgroundColor: 'litghgray',
-    borderRadius: '5px',
-    fontSize: '18px',
-  },
-
 }));
 
 export default NavbarMobileLink;

@@ -13,6 +13,16 @@ const routes = {
   CardPage: '/card',
   AccordionPage: '/accordion',
   ImagesPage: '/images',
+  AvatarPage: '/avatar',
+  BottomNavPage: '/bottomNav',
+  DrawerPage: '/drawer',
+  BreadCrumbsPage: '/breadcrumbs',
+  SpeedDialPage: '/speedDial',
+  LinksPage: '/links',
+  NavBarPage: '/navbar',
 } as const;
+
+export type Routes = typeof routes;
+export type RouteLink = Routes[keyof Routes];
 
 export default routes;

@@ -1,7 +1,7 @@
 import { alpha, styled } from '@mui/material';
 import { NavLink } from 'react-router-dom';
 
-const NavbarLink = styled(NavLink)(({ theme }) => ({
+const NavbarDekstopLink = styled(NavLink)(({ theme }) => ({
   alignSelf: 'stretch',
   display: 'inline-grid',
   placeItems: 'center',
@@ -14,6 +14,7 @@ const NavbarLink = styled(NavLink)(({ theme }) => ({
   cursor: 'pointer',
   '&:hover': {
     backgroundColor: theme.palette.primary.dark,
+    borderBottom: '3px solid white',
   },
   '&.active': {
     boxShadow: `inset 0 -4px 0 0 ${theme.palette.common.white}`,
@@ -21,4 +22,4 @@ const NavbarLink = styled(NavLink)(({ theme }) => ({
   },
 }));
 
-export default NavbarLink;
+export default NavbarDekstopLink;

@@ -1,6 +1,6 @@
 import routes from 'navigation/routes';
 
-const linksData = [
+const DekstopLinkData = [
   { link: routes.HomePage, text: 'Home' },
   { link: routes.TypographyPage, text: 'Typography' },
   { link: routes.ButtonPage, text: 'Buttons' },
@@ -15,6 +15,13 @@ const linksData = [
   { link: routes.CardPage, text: 'Card' },
   { link: routes.AccordionPage, text: 'Accordion' },
   { link: routes.ImagesPage, text: 'Images' },
+  { link: routes.AvatarPage, text: 'Avatar' },
+  { link: routes.BottomNavPage, text: 'BottomNav' },
+  { link: routes.BreadCrumbsPage, text: 'BreadCrumbs' },
+  { link: routes.DrawerPage, text: 'Drawer' },
+  { link: routes.SpeedDialPage, text: 'SpeedDial' },
+  { link: routes.LinksPage, text: 'Links' },
+  { link: routes.NavBarPage, text: 'NavBar' },
 ];
 
-export default linksData;
+export default DekstopLinkData;

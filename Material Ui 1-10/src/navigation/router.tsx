@@ -15,6 +15,13 @@ import MuiBoxPage from 'pages/mui-box-page';
 import MuiCardPage from 'pages/mui-card-page';
 import MuiAccordionPage from 'pages/mui-accordion-page';
 import MuiImageListPage from 'pages/mui-images-page';
+import MuiAvatartPage from 'pages/mui-avatar-page';
+import MuiBottomNavigationPage from 'pages/mui-bottom-navigation-page';
+import MuiBreadcrumbsPage from 'pages/mui-breadcumbs-page';
+import MuiLinksPage from 'pages/mui-links-page';
+import MuiDrawerPage from 'pages/mui-drawer-page';
+import MuiNavBarPage from 'pages/mui-navbar-page';
+import MuiSpeedDialPage from 'pages/mui-speed-dial-page';
 import routes from './routes';
 
 const router = createBrowserRouter([
@@ -77,6 +84,34 @@ const router = createBrowserRouter([
       {
         path: routes.ImagesPage,
         element: <MuiImageListPage />,
+      },
+      {
+        path: routes.AvatarPage,
+        element: <MuiAvatartPage />,
+      },
+      {
+        path: routes.BottomNavPage,
+        element: <MuiBottomNavigationPage />,
+      },
+      {
+        path: routes.BreadCrumbsPage,
+        element: <MuiBreadcrumbsPage />,
+      },
+      {
+        path: routes.LinksPage,
+        element: <MuiLinksPage />,
+      },
+      {
+        path: routes.DrawerPage,
+        element: <MuiDrawerPage />,
+      },
+      {
+        path: routes.NavBarPage,
+        element: <MuiNavBarPage />,
+      },
+      {
+        path: routes.SpeedDialPage,
+        element: <MuiSpeedDialPage />,
       },
 
     ],
