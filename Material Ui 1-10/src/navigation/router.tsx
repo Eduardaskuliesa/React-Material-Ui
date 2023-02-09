@@ -22,6 +22,9 @@ import MuiLinksPage from 'pages/mui-links-page';
 import MuiDrawerPage from 'pages/mui-drawer-page';
 import MuiNavBarPage from 'pages/mui-navbar-page';
 import MuiSpeedDialPage from 'pages/mui-speed-dial-page';
+import MuiListPage from 'pages/mui-list-page';
+import MuiBadgePage from 'pages/mui-badge-page';
+import MuiChipPage from 'pages/mui-chip-page';
 import routes from './routes';
 
 const router = createBrowserRouter([
@@ -112,6 +115,18 @@ const router = createBrowserRouter([
       {
         path: routes.SpeedDialPage,
         element: <MuiSpeedDialPage />,
+      },
+      {
+        path: routes.ListPage,
+        element: <MuiListPage />,
+      },
+      {
+        path: routes.BadgePage,
+        element: <MuiBadgePage />,
+      },
+      {
+        path: routes.ChipPage,
+        element: <MuiChipPage />,
       },
 
     ],

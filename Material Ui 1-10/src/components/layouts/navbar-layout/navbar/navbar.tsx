@@ -7,12 +7,16 @@ import {
 } from '@mui/material';
 import routes from 'navigation/routes';
 import DekstopLinkData from 'navigation/links-data';
+import OtherHousesIcon from '@mui/icons-material/OtherHouses';
 import type LinkData from './links.data';
 import NavbarMobileMenu from './mobile/navbar-mobile-menu';
 import NavBarDekstopMenu from './dekstop/navbar-dekstop-menu';
 
 const linksData: LinkData[] = [
-  { link: routes.HomePage, text: 'Home' },
+  {
+    link: routes.HomePage,
+    muiName: <OtherHousesIcon />,
+  },
 ];
 
 const presentationalPagesData: LinkData[] = [
@@ -22,6 +26,8 @@ const presentationalPagesData: LinkData[] = [
   { link: routes.SpeedDialPage, text: 'SpeedDial' },
   { link: routes.LinksPage, text: 'Links' },
   { link: routes.BreadCrumbsPage, text: 'BreadCrumbs' },
+  { link: routes.ChipPage, text: 'Chip' },
+  { link: routes.BadgePage, text: 'Badge' },
 ];
 
 const controlsPagesData = [
@@ -40,6 +46,7 @@ const wrapperPagesData = [
   { link: routes.ImagesPage, text: 'Image List' },
   { link: routes.DrawerPage, text: 'Drawer' },
   { link: routes.NavBarPage, text: 'NavBar' },
+  { link: routes.ListPage, text: 'List' },
 ];
 
 const statefulPagesData = [

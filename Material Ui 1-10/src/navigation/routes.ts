@@ -1,5 +1,5 @@
 const routes = {
-  HomePage: '/',
+  HomePage: '/home',
   TypographyPage: '/typography',
   ButtonPage: '/buttons',
   CheckmarksPage: '/checkmarks',
@@ -20,6 +20,9 @@ const routes = {
   SpeedDialPage: '/speedDial',
   LinksPage: '/links',
   NavBarPage: '/navbar',
+  BadgePage: '/badge',
+  ChipPage: '/chip',
+  ListPage: '/list',
 } as const;
 
 export type Routes = typeof routes;

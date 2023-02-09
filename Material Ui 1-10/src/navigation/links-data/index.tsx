@@ -22,6 +22,9 @@ const DekstopLinkData = [
   { link: routes.SpeedDialPage, text: 'SpeedDial' },
   { link: routes.LinksPage, text: 'Links' },
   { link: routes.NavBarPage, text: 'NavBar' },
+  { link: routes.ChipPage, text: 'Chip' },
+  { link: routes.BadgePage, text: 'Badge' },
+  { link: routes.ListPage, text: 'List' },
 ];
 
 export default DekstopLinkData;
