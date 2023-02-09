@@ -8,6 +8,13 @@ import MuiCheckMarkPage from 'pages/mui-checkmark-page';
 import MuiRadioButtonPage from 'pages/mui-radio-button-page';
 import MuiSelectPage from 'pages/mui-select-page';
 import MuiTextFieldPage from 'pages/mui-textfield-page';
+import MuiSwitchPage from 'pages/mui-switch-page';
+import MuiRatingPage from 'pages/mui-rating-page';
+import MuiAutoCompletePage from 'pages/mui-auto-complete-page';
+import MuiBoxPage from 'pages/mui-box-page';
+import MuiCardPage from 'pages/mui-card-page';
+import MuiAccordionPage from 'pages/mui-accordion-page';
+import MuiImageListPage from 'pages/mui-images-page';
 import routes from './routes';
 
 const router = createBrowserRouter([
@@ -42,6 +49,34 @@ const router = createBrowserRouter([
       {
         path: routes.TextFieldPage,
         element: <MuiTextFieldPage />,
+      },
+      {
+        path: routes.SwitchPage,
+        element: <MuiSwitchPage />,
+      },
+      {
+        path: routes.RatingPage,
+        element: <MuiRatingPage />,
+      },
+      {
+        path: routes.AutoCompletePage,
+        element: <MuiAutoCompletePage />,
+      },
+      {
+        path: routes.BoxPage,
+        element: <MuiBoxPage />,
+      },
+      {
+        path: routes.CardPage,
+        element: <MuiCardPage />,
+      },
+      {
+        path: routes.AccordionPage,
+        element: <MuiAccordionPage />,
+      },
+      {
+        path: routes.ImagesPage,
+        element: <MuiImageListPage />,
       },
 
     ],
