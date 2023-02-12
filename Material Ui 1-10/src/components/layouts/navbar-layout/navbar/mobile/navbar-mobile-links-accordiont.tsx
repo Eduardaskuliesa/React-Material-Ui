@@ -1,6 +1,4 @@
 import React from 'react';
-import { useLocation } from 'react-router-dom';
-
 import {
   Accordion,
   Typography,
@@ -10,51 +8,41 @@ import {
   AccordionSummary,
 } from '@mui/material';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import { AccordionProps } from '@mui/material/Accordion';
 import NavbarMobileLink from './navbar-mobile';
-import LinkData from '../links.data';
+import LinkData from '../links.data.d';
 
 type NavbarMobileLinkAccordionProps = {
   title: string,
   linksData: LinkData[]
-  closeDrawer: VoidFunction
+  closeMenu: VoidFunction
+  expanded: boolean,
+  onChange: AccordionProps['onChange'],
+  hasActiveLink: boolean
 };
 
 const NavbarMobileLinkAccordion: React.FC<NavbarMobileLinkAccordionProps> = ({
   title,
   linksData,
-  closeDrawer,
-}) => {
-  const { pathname } = useLocation();
-  const hasActiveLink = linksData.map<string>(({ link }) => link).includes(pathname);
-
-  return (
-    <Accordion
-      defaultExpanded={hasActiveLink}
-      disableGutters
-      sx={{
-        margin: 0,
-      }}
-    >
-      <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-        <Typography color={hasActiveLink ? 'primary' : 'inherit'}>{title}</Typography>
-      </AccordionSummary>
-      <AccordionDetails>
-        <MenuList sx={{ p: 0 }}>
-          {linksData.map(({ link, text }) => (
-            <MenuItem
-              key={link}
-              onClick={closeDrawer}
-              sx={{
-                p: 0,
-              }}
-            >
-              <NavbarMobileLink to={link}>{text}</NavbarMobileLink>
-            </MenuItem>
-          ))}
-        </MenuList>
-      </AccordionDetails>
-    </Accordion>
-  );
-};
+  closeMenu,
+  expanded,
+  onChange,
+  hasActiveLink,
+}) => (
+  <Accordion expanded={expanded} onChange={onChange} disableGutters>
+    <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+      <Typography color={hasActiveLink ? 'primary' : 'inherit'}>{title}</Typography>
+    </AccordionSummary>
+    <AccordionDetails>
+      <MenuList sx={{ p: 0 }}>
+        {linksData.map(({ link, content }) => (
+          <MenuItem key={link} onClick={closeMenu} sx={{ p: 0 }}>
+            <NavbarMobileLink to={link}>{content}</NavbarMobileLink>
+          </MenuItem>
+        ))}
+      </MenuList>
+    </AccordionDetails>
+  </Accordion>
+);
 
 export default NavbarMobileLinkAccordion;

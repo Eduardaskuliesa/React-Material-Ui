@@ -1,10 +1,9 @@
-import { ReactJSXElement } from '@emotion/react/types/jsx-namespace';
 import { type RouteLink } from 'navigation/routes';
+import { ReactNode } from 'react';
 
 type LinkData = {
   link: RouteLink,
-  text?: string,
-  muiName?: ReactJSXElement
+  content: ReactNode,
 };
 
 export default LinkData;

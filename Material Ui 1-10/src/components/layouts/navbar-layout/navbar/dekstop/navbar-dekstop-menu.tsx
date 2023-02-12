@@ -1,6 +1,6 @@
 import React from 'react';
 import { Box, type Breakpoint } from '@mui/material';
-import LinkData from '../links.data';
+import LinkData from '../links.data.d';
 import NavbarDekstopLink from './navbar-links';
 
 type NavbarDekstopMenuProps = {
@@ -18,8 +18,8 @@ const NavBarDekstopMenu: React.FC<NavbarDekstopMenuProps> = ({
   }}
   >
     {
-          linksData.map(({ link, text }) => (
-            <NavbarDekstopLink key={link} to={link}>{text}</NavbarDekstopLink>
+          linksData.map(({ link, content }) => (
+            <NavbarDekstopLink key={link} to={link}>{content}</NavbarDekstopLink>
           ))
         }
   </Box>
