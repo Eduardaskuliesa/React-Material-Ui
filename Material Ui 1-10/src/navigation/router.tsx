@@ -25,6 +25,21 @@ import MuiSpeedDialPage from 'pages/mui-speed-dial-page';
 import MuiListPage from 'pages/mui-list-page';
 import MuiBadgePage from 'pages/mui-badge-page';
 import MuiChipPage from 'pages/mui-chip-page';
+import MuiAlertPage from 'pages/mui-alert';
+import MuiCustomThemePage from 'pages/mui-custom-theme';
+import MuiTooltip from 'pages/mui-tooltips';
+import MuiTimelinePage from 'pages/mui-timline-page';
+import MuiTabsPage from 'pages/mui-tab-page';
+import MuiSnackbarPage from 'pages/mui-snackbar-page';
+import MuiSkeletonPage from 'pages/mui-skeleton-page';
+import MuiDateRangePickerPage from 'pages/mui-date-range-picker-page';
+import MuiDateTimePickerPage from 'pages/mui-date-time-picker-page';
+import MuiDialogPage from 'pages/mui-dialog-page';
+import MuiLayoutPage from 'pages/mui-layout-page';
+import MuiLoadingButtonPage from 'pages/mui-loauding-button-page';
+import MuiMasonryPage from 'pages/mui-masonry';
+import MuiProgressPage from 'pages/mui-progress-page';
+import MuiTablePage from 'pages/mui-table';
 import routes from './routes';
 
 const router = createBrowserRouter([
@@ -127,6 +142,66 @@ const router = createBrowserRouter([
       {
         path: routes.ChipPage,
         element: <MuiChipPage />,
+      },
+      {
+        path: routes.AlertPage,
+        element: <MuiAlertPage />,
+      },
+      {
+        path: routes.CutsomThemePage,
+        element: <MuiCustomThemePage />,
+      },
+      {
+        path: routes.ToolTipsPage,
+        element: <MuiTooltip />,
+      },
+      {
+        path: routes.TimlinePage,
+        element: <MuiTimelinePage />,
+      },
+      {
+        path: routes.TabPage,
+        element: <MuiTabsPage />,
+      },
+      {
+        path: routes.SnackBarPage,
+        element: <MuiSnackbarPage />,
+      },
+      {
+        path: routes.SkeletonPage,
+        element: <MuiSkeletonPage />,
+      },
+      {
+        path: routes.DateRangePickerPage,
+        element: <MuiDateRangePickerPage />,
+      },
+      {
+        path: routes.DateTimePickerPage,
+        element: <MuiDateTimePickerPage />,
+      },
+      {
+        path: routes.DialogPage,
+        element: <MuiDialogPage />,
+      },
+      {
+        path: routes.LayoutPage,
+        element: <MuiLayoutPage />,
+      },
+      {
+        path: routes.LoudingButtonPage,
+        element: <MuiLoadingButtonPage />,
+      },
+      {
+        path: routes.MasonryPage,
+        element: <MuiMasonryPage />,
+      },
+      {
+        path: routes.ProgressPage,
+        element: <MuiProgressPage />,
+      },
+      {
+        path: routes.TablePage,
+        element: <MuiTablePage />,
       },
 
     ],
