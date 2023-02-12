@@ -13,7 +13,7 @@ import CloseIcon from '@mui/icons-material/Close';
 import { useLocation } from 'react-router-dom';
 import NavbarMobileLink from './navbar-mobile';
 import NavbarMobileLinkAccordion from './navbar-mobile-links-accordiont';
-import { expandBreakpoint, MobilelinksGroups, linksData} from './mobile-links-data';
+import { expandBreakpoint, linksData, linksGroups } from '../links-data';
 import getActiveLinkGroupTitle from '../helpers';
 
 const NavbarMobileMenu: React.FC = () => {
@@ -50,25 +50,25 @@ const NavbarMobileMenu: React.FC = () => {
         open={menuOpen && !isExpanded}
         onClose={() => setMenuOpen(false)}
       >
-         <Toolbar />
-          <MenuList sx={{ p: 0 }}>
-            {linksData.map(({ link, content }) => (
-              <MenuItem key={link} onClick={closeMenu} sx={{ p: 0 }}>
-                <NavbarMobileLink to={link}>{content}</NavbarMobileLink>
-              </MenuItem>
-            ))}
-            {MobilelinksGroups.map((linksGroup) => (
-              <NavbarMobileLinkAccordion
-                key={linksGroup.title}
-                title={linksGroup.title}
-                linksData={linksGroup.linksData}
-                closeMenu={closeMenu}
-                expanded={openAccordionTitle === linksGroup.title}
-                onChange={handleAccordionAction(linksGroup.title)}
-                hasActiveLink={activeLinkGroupTitle === linksGroup.title}
-              />
-            ))}
-          </MenuList>
+        <Toolbar />
+        <MenuList sx={{ p: 0 }}>
+          {linksData.map(({ link, content }) => (
+            <MenuItem key={link} onClick={closeMenu} sx={{ p: 0 }}>
+              <NavbarMobileLink to={link}>{content}</NavbarMobileLink>
+            </MenuItem>
+          ))}
+          {linksGroups.map((linksGroup) => (
+            <NavbarMobileLinkAccordion
+              key={linksGroup.title}
+              title={linksGroup.title}
+              linksData={linksGroup.linksData}
+              closeMenu={closeMenu}
+              expanded={openAccordionTitle === linksGroup.title}
+              onChange={handleAccordionAction(linksGroup.title)}
+              hasActiveLink={activeLinkGroupTitle === linksGroup.title}
+            />
+          ))}
+        </MenuList>
       </Drawer>
     </>
   );

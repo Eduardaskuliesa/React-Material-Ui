@@ -1,8 +1,8 @@
-import { MobilelinksGroups } from './mobile/mobile-links-data';
+import { linksGroups } from './links-data';
 
 const getActiveLinkGroupTitle = (currentUrl: string) => {
-  for (let i = 0; i < MobilelinksGroups.length; i += 1) {
-    const linkGroup = MobilelinksGroups[i];
+  for (let i = 0; i < linksGroups.length; i += 1) {
+    const linkGroup = linksGroups[i];
     const hasActiveLink = linkGroup.linksData
       .map<string>(({ link }) => link)
       .includes(currentUrl);

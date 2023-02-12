@@ -10,7 +10,7 @@ import {
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { AccordionProps } from '@mui/material/Accordion';
 import NavbarMobileLink from './navbar-mobile';
-import LinkData from '../links.data.d';
+import LinkData from '../links.data-type';
 
 type NavbarMobileLinkAccordionProps = {
   title: string,

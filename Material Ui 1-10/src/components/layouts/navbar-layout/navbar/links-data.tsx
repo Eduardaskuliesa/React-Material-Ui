@@ -4,13 +4,13 @@ import {
 } from '@mui/material';
 import HomeIcon from '@mui/icons-material/Home';
 import React from 'react';
-import type LinkData from '../links.data';
+import type LinkData from './links.data-type';
 
 export const linksData: LinkData[] = [
   { link: routes.HomePage, content: <HomeIcon /> },
 ];
 
-export const MobilelinksGroups = [
+export const linksGroups = [
   {
     title: 'Presentational',
     linksData: [
@@ -22,6 +22,8 @@ export const MobilelinksGroups = [
       { link: routes.BreadCrumbsPage, content: 'BreadCrumbs' },
       { link: routes.ChipPage, content: 'Chip' },
       { link: routes.BadgePage, content: 'Badge' },
+      { link: routes.AlertPage, content: 'Alert' },
+      { link: routes.TimlinePage, content: 'TimeLine' },
     ],
   },
   {
@@ -34,6 +36,9 @@ export const MobilelinksGroups = [
       { link: routes.CheckmarksPage, content: 'Checkbox' },
       { link: routes.AutoCompletePage, content: 'AutoComplete' },
       { link: routes.SwitchPage, content: 'Switch' },
+      { link: routes.DateRangePickerPage, content: 'DataPicker' },
+      { link: routes.DateTimePickerPage, content: 'DataTimePicker' },
+      { link: routes.LoudingButtonPage, content: 'LoadingButton' },
     ],
   },
   {
@@ -45,6 +50,10 @@ export const MobilelinksGroups = [
       { link: routes.DrawerPage, content: 'Drawer' },
       { link: routes.NavBarPage, content: 'NavBar' },
       { link: routes.ListPage, content: 'List' },
+      { link: routes.TabPage, content: 'Tab' },
+      { link: routes.TablePage, content: 'Table' },
+      { link: routes.LayoutPage, content: 'Layout' },
+      { link: routes.SkeletonPage, content: 'Skeleton' },
     ],
   },
   {
@@ -52,6 +61,12 @@ export const MobilelinksGroups = [
     linksData: [
       { link: routes.AccordionPage, content: 'Accordion' },
       { link: routes.BottomNavPage, content: 'BottomNav' },
+      { link: routes.CutsomThemePage, content: 'CustomTheme' },
+      { link: routes.DialogPage, content: 'Dialog' },
+      { link: routes.MasonryPage, content: 'Masonry' },
+      { link: routes.ProgressPage, content: 'Progress' },
+      { link: routes.SnackBarPage, content: 'SnackBar' },
+      { link: routes.ToolTipsPage, content: 'ToolTips' },
     ],
   },
 ];

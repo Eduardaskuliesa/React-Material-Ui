@@ -23,6 +23,22 @@ const routes = {
   BadgePage: '/badge',
   ChipPage: '/chip',
   ListPage: '/list',
+  AlertPage: '/alert',
+  CutsomThemePage: '/customtheme',
+  DateRangePickerPage: '/dateRangePicker',
+  DateTimePickerPage: '/dateTimePicker',
+  DialogPage: '/dialog',
+  LayoutPage: '/layout',
+  LoudingButtonPage: '/loudingButton',
+  MasonryPage: '/masonry',
+  ProgressPage: '/progress',
+  SkeletonPage: '/skeleton',
+  SnackBarPage: '/snackBar',
+  TabPage: '/tab',
+  TimlinePage: '/timline',
+  ToolTipsPage: '/toolTips',
+  TablePage: '/table',
+
 } as const;
 
 export type Routes = typeof routes;
